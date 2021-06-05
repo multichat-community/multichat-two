@@ -1,0 +1,27 @@
+apply plugin: 'com.github.johnrengelman.shadow'
+
+repositories {
+    maven {
+        name = 'sonatype'
+        url = 'https://oss.sonatype.org/content/groups/public/'
+    }
+}
+
+dependencies {
+    implementation project(':multichat2-common')
+    compileOnly 'net.md-5:bungeecord-api:1.16-R0.4'
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        expand 'version': project.version
+    }
+}
+
+shadowJar {
+    dependencies {
+        include(dependency(':multichat2-common'))
+    }
+}
+
+tasks.build.dependsOn tasks.shadowJar

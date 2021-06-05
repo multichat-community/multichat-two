@@ -1,0 +1,4 @@
+name: MultiChat2
+version: @version@
+main: me.gadse.multichat2.MultiChat2BungeeCord
+description: BungeeCord capable Chat management plugin based on MultiChat.

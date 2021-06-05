@@ -1,0 +1,3 @@
+rootProject.name = 'MultiChat2'
+
+include 'multichat2-common', 'multichat2-spigot', 'multichat2-sponge', 'multichat2-bungeecord'

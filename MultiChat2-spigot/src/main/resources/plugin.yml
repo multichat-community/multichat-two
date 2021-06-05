@@ -1,0 +1,7 @@
+name: MultiChat2
+version: @version@
+main: me.gadse.multichat2.MultiChat2Spigot
+api-version: 1.13
+softdepend: [ Vault, PlaceholderAPI ]
+authors: [ Gadse, Revilo ]
+description: Spigot side of MultiChat2.
